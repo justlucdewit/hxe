@@ -1,3 +1,5 @@
+LIBS=sources/file_reader.c
+
 test:
-	gcc main.c -o hxe
+	gcc main.c $(LIBS) -o hxe
 	./hxe ls
